@@ -18,13 +18,28 @@ h1, h2, h3 {
 
 @font-face {
     font-family: 'GaretBook';
-    src: url("Garet-Book.ttf");
+    src: url("assets/fonts/Garet-Book.ttf");
 }
 
+@font-face {
+    font-family: 'Xolonium-Regular';
+    src: url("assets/fonts/Xolonium-Regular.ttf");
+}
+
+
+
 .title {
+    font-family: 'Xolonium-Regular';
+    /*color: #89fdda;*/
     font-size: 4rem;
     text-align: center;
     padding: 0;
+    background-image: linear-gradient(#ffffff, #89fdda);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    filter: drop-shadow(3px 3px 7px #6200ff);
+
 }
 
 
@@ -32,7 +47,7 @@ h1, h2, h3 {
 /* navigation bar */
 
 nav .logo {
-    background-image: url("images/logo.png");
+    background-image: url("assets/images/logo.png");
     background-size: 64px;
     background-repeat: no-repeat;
     text-indent: -9999999px;
@@ -42,7 +57,7 @@ nav .logo {
 }
 
 nav {
-    color: #51E1B6;
+    color: #89fdda;
     background:  #000000;
     padding: 0;
     margin: 0;
@@ -76,7 +91,7 @@ nav ul li a {
 
 
 nav ul li:not(.logo) a:hover {
-    background: #51E1B6;
+    background: #89fdda;
     color: #191919;
     border-bottom: none;
 }
@@ -119,13 +134,19 @@ header.banner {
 }
 
 header.banner h1 {
+    
+    font-family: 'Xolonium-Regular';
     position: absolute;
     top: 20%;
     left: 5%;
     text-align: left;
     z-index: 2;
     font-size: 5rem;
-    color: #51E1B6;
+    background-image: linear-gradient(#ffffff, #89fdda);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    filter: drop-shadow(3px 3px 7px #6200ff);
 }
 
 header.banner h2 {
@@ -227,7 +248,7 @@ section.events {
     position: absolute;
     top: 10px;
     right: 20px;
-    font-size: 30px;
+    font-size: 4rem;
     cursor: pointer;
 }
 
@@ -250,12 +271,12 @@ section.events {
 }
 
 #popup-title {
-    font-size: 24px;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
 #popup-description {
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 
@@ -264,16 +285,25 @@ section.events {
 
 
 
-/* something */
+/* section formatting tags */
 
-section.something {
+section.textsection {
     padding:80px;
-    background-color: #313131;
 }
 
-section.something h2{
+section.textsection h2{
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    line-height: 200%;
     padding-top: 60px;
+    color: #dedede
 }
+
+section.lightsection {
+    background-color: #2c2c2c;
+}
+
 
 /* footer */
 footer {
@@ -281,3 +311,4 @@ footer {
     margin: 0;
     padding: 50px;
 }
+

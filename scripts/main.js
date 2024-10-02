@@ -14,12 +14,12 @@ const bannerTitle = document.getElementById('banner-title')
 const bannerTagline = document.getElementById('banner-tagline')
 
 const bannerUrls = [
-    ['images/animbanner.png','Premier League Speedcubers',"Tagline Text Tagline text jsda\n\nfkhgsldfkjghsdfl\nkjghsdflkjghsdflkgjhs\ndflgj hsdflkj g<br>hsldjkf hgdslk "],
-    ['images/banner2.png','title2','tagline2'],
-    ['images/banner3.png','title3','tagline3'],
-    ['images/banner4.png','title4','tagline4']
+    ['assets/images/banner1.png','Premier Speedcubers League',"The Home of Professional Speedcubing\n\nFeaturing:\n• Head to head competition\n• Open Qualifiers\n• Competitive Rating Systems"],
+    ['assets/images/banner2.png','Our Next Event','San Diego Open PSL Qualifiers\n\nMarch 22nd, 2025\n\n$500 in Cash Prizes!'],
+    ['assets/images/banner3.png','What Makes Us Special?','Compete in our open qualifiers to not only achieve\n WCA-recognized results, \
+        but also compete for a\n chance to qualify for the PSL Invitationals: \nour 8-person, double elimination tournaments!']
 ];
-const bannerShiftSeconds = 5;
+const bannerShiftSeconds = 6;
 
 // create and append the image elements dynamically
 bannerUrls.forEach((banner, index) => {
@@ -40,6 +40,11 @@ let currentIndex = 0;
 
 function changeBanner() {
     //new
+
+    //comment out to pause the scrolling banner on whatever the number below is
+    // if (currentIndex == 2){
+    //     return;
+    // }
     bannerTitle.classList.remove('show');
     bannerTagline.classList.remove('show');
 
@@ -82,27 +87,27 @@ const closeBtn = document.getElementById('close-popup');
 // Content data for each event
 const eventData = [
     {
-        imageSrc: 'images/cubicle.png',
+        imageSrc: 'assets/images/cubicle.png',
         title: 'Cubicle Champs',
         description: 'Description for Cubicle Champs',
         backgroundImage: 'url(images/background1.jpg)'
     },
     {
-        imageSrc: 'images/scs.png',
+        imageSrc: 'assets/images/scs.png',
         title: 'SCS Showdown',
         description: 'Description for SCS Showdown',
         backgroundImage: 'url(images/background2.jpg)'
     },
     {
-        imageSrc: 'images/happyfeet.png',
+        imageSrc: 'assets/images/happyfeet.png',
         title: 'Penguin League',
         description: 'Description for Penguin League',
         backgroundImage: 'url(images/background3.jpg)'
     },
     {
-        imageSrc: 'images/prime.png',
-        title: 'Max Park',
-        description: 'Description for Max Park',
+        imageSrc: 'assets/images/prime.png',
+        title: 'PSL Qualifiers',
+        description: 'Description for PSL Qualifiers',
         backgroundImage: 'url(images/background4.jpg)'
     }
 ];
