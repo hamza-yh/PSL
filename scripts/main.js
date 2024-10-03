@@ -15,8 +15,8 @@ const bannerTagline = document.getElementById('banner-tagline')
 
 const bannerUrls = [
     ['assets/images/banner1.png','Premier Speedcubers League',"The Home of Professional Speedcubing\n\nFeaturing:\n• Head to head competition\n• Open Qualifiers\n• Competitive Rating Systems"],
-    ['assets/images/banner2.png','Our Next Event','San Diego Open PSL Qualifiers\n\nMarch 22nd, 2025\n\n$500 in Cash Prizes!'],
-    ['assets/images/banner3.png','What Makes Us Special?','Compete in our open qualifiers to not only achieve\n WCA-recognized results, \
+    ['assets/images/banner2.png','Our Next Event','San Diego Open PSL Qualifiers\n\nMarch 22nd, 2025\n\n$1000 in Cash Prizes!'],
+    ['assets/images/banner3.png','What Makes Us Special?','Compete in our open qualifiers to not only achieve\n WCA-recognized results,\
         but also compete for a\n chance to qualify for the PSL Invitationals: \nour 8-person, double elimination tournaments!']
 ];
 const bannerShiftSeconds = 6;
@@ -28,8 +28,8 @@ bannerUrls.forEach((banner, index) => {
     bannerImage.style.backgroundImage = `url(${banner[0]})`;
     if (index === 0) {
         bannerImage.classList.add('active'); // make sure page loads with visible image
-        bannerTitle.textContent = bannerUrls[0][TITLEINDEX]
-        bannerTagline.textContent = bannerUrls[0][TAGLINEINDEX]
+        bannerTitle.innerHTML = bannerUrls[0][TITLEINDEX]
+        bannerTagline.innerHTML = bannerUrls[0][TAGLINEINDEX]
     }
     slider.appendChild(bannerImage);
 });
@@ -42,9 +42,9 @@ function changeBanner() {
     //new
 
     //comment out to pause the scrolling banner on whatever the number below is
-    // if (currentIndex == 2){
-    //     return;
-    // }
+    //if (currentIndex == 0){
+    //    return;
+    //}
     bannerTitle.classList.remove('show');
     bannerTagline.classList.remove('show');
 
@@ -88,14 +88,14 @@ const closeBtn = document.getElementById('close-popup');
 const eventData = [
     {
         imageSrc: 'assets/images/cubicle.png',
-        title: 'Cubicle Champs',
-        description: 'Description for Cubicle Champs',
+        title: 'PSL Qualifiers San Diego',
+        description: 'Description for PSL SD',
         backgroundImage: 'url(images/background1.jpg)'
     },
     {
         imageSrc: 'assets/images/scs.png',
-        title: 'SCS Showdown',
-        description: 'Description for SCS Showdown',
+        title: 'PSL Qualifiers Michigan',
+        description: 'Description for PSL MI',
         backgroundImage: 'url(images/background2.jpg)'
     },
     {
@@ -106,8 +106,8 @@ const eventData = [
     },
     {
         imageSrc: 'assets/images/prime.png',
-        title: 'PSL Qualifiers',
-        description: 'Description for PSL Qualifiers',
+        title: 'PSL Qualifiers Las Vegas',
+        description: 'Description for PSL LV',
         backgroundImage: 'url(images/background4.jpg)'
     }
 ];
