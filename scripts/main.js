@@ -89,23 +89,24 @@ const eventData = [
     {
         imageSrc: 'assets/images/cubicle.png',
         title: 'PSL Qualifiers San Diego',
-        description: 'Description for PSL SD',
-        backgroundImage: 'url(images/background1.jpg)'
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Nullam vulputate sit amet sapien et eleifend. Nullam pulvinar ut orci quis venenatis. Morbi a diam quis dolor varius ultrices. Etiam id congue quam. Proin at urna mi. Vestibulum posuere sapien vitae ex finibus venenatis.',
+        backgroundImage: 'url(images/background1.jpg)',
+        link: 'https://google.com'
     },
     {
-        imageSrc: 'assets/images/scs.png',
+        imageSrc: 'assets/images/coming_soon.png',
         title: 'PSL Qualifiers Michigan',
         description: 'Description for PSL MI',
         backgroundImage: 'url(images/background2.jpg)'
     },
     {
-        imageSrc: 'assets/images/happyfeet.png',
+        imageSrc: 'assets/images/coming_soon.png',
         title: 'Penguin League',
         description: 'Description for Penguin League',
         backgroundImage: 'url(images/background3.jpg)'
     },
     {
-        imageSrc: 'assets/images/prime.png',
+        imageSrc: 'assets/images/coming_soon.png',
         title: 'PSL Qualifiers Las Vegas',
         description: 'Description for PSL LV',
         backgroundImage: 'url(images/background4.jpg)'
@@ -119,6 +120,7 @@ function openPopup(index) {
     popupImage.src = event.imageSrc;
     popupTitle.textContent = event.title;
     popupDescription.textContent = event.description;
+    document.getElementById('popup-link').href = event.link;
     popup.style.display = 'block';
 }
 

@@ -1,4 +1,8 @@
-/*base*/
+/******************
+
+base
+
+******************/
 
 * {
     margin: 0;
@@ -8,7 +12,7 @@
 body {
     color: white;
     background: #191919;
-    font-family: Gontserrat-Light, Helvetica, Arial, sans-serif;
+    font-family: Garet, Helvetica, Arial, sans-serif;
     padding: 0;
 }
 
@@ -40,17 +44,23 @@ h1, h2, h3 {
     font-size: 4rem;
     text-align: center;
     padding: 0;
+    /*
     background-image: linear-gradient(#ffffff, #89fdda);
     color: transparent;
+    */
     background-clip: text;
     -webkit-background-clip: text;
-    filter: drop-shadow(3px 3px 7px #6200ff);
+    filter: drop-shadow(4px 4px 4px #6200ff);
 
 }
 
 
 
-/* navigation bar */
+/******************
+
+navigation bar
+
+******************/
 
 nav .logo {
     background-image: url("assets/images/logo.png");
@@ -98,11 +108,41 @@ nav ul li a {
 
 nav ul li:not(.logo) a:hover {
     background: #89fdda;
+    font-weight: bold;
     color: #191919;
     border-bottom: none;
 }
 
-/* header and banner*/
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    z-index: 3;
+}
+
+.dropdown-content a {
+    width: 130px;
+}
+
+.dropdown-content a:hover {
+    width: 130px; /* TODO figure out how to make this not magic */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/******************
+
+header and banner
+
+******************/
 header {
     height: 200px;
     padding: 20px;
@@ -157,8 +197,8 @@ header.banner h1 {
     text-align: left;
     z-index: 2;
     font-size: 5rem;
-    background-image: linear-gradient(#ffffff, #89fdda);
-    color: transparent;
+    /*background-image: linear-gradient(#ffffff, #89fdda);
+    color: transparent;*/
     background-clip: text;
     -webkit-background-clip: text;
     filter: drop-shadow(3px 3px 7px #6200ff);
@@ -169,8 +209,10 @@ header.banner h2 {
     top: 40%;
     left: 5%;
     text-align: left;
-    font-size: 2rem;
     z-index: 2;
+    font-style: italic;
+    color: #e0e0e0;
+    filter: drop-shadow(0px 0px 4px #000000)
 }
 
 #banner-title {
@@ -187,7 +229,7 @@ header.banner h2 {
     /* Initial position to the right */
     line-height: 150%;
     transform: translateX(-500%);
-    font-size: 2rem;
+    font-size: 1.75rem;
     opacity: 0;
     white-space: pre-line;
 }
@@ -201,7 +243,11 @@ header.banner h2 {
 }
 
 
-/* PSL info */
+/******************
+
+PSL info
+
+******************/
 .psl-info {
     display: flex;
     justify-content: space-between; 
@@ -213,8 +259,13 @@ header.banner h2 {
     flex: 1;
 }
 
-/* event info */
 
+
+/******************
+
+Event info
+
+******************/
 section.events { 
     padding: 80px;
     background: #2c2c2c;
@@ -233,7 +284,7 @@ section.events {
     margin: 10px;
     text-align: center;
     flex: 1; 
-    filter: drop-shadow(5px 5px 5px #000000);
+    filter: drop-shadow(3px 3px 3px #000000);
 }
 
 .event-figs img {
@@ -247,7 +298,11 @@ section.events {
 
 
 
-/* event info popup */
+/******************
+
+Event info popup
+
+******************/
 
 .popup {
     display: none;
@@ -261,9 +316,9 @@ section.events {
 }
 
 .popup-content {
-    display: flex; /* Added flexbox to align items in a row */
+    display: flex;
     width: 80%;
-    max-width: 800px; /* Optional: set a max width */
+    max-width: 800px;
     background: #222222;
     padding: 20px;
     border-radius: 10px;
@@ -282,16 +337,17 @@ section.events {
 }
 
 .popup-left {
-    width: 50%; /* Takes up 50% of the popup-content width */
+    width: 50%;
     padding-right: 20px;
 }
 
 .popup-right {
-    width: 50%; /* Takes up 50% of the popup-content width */
+    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centers content vertically */
-    color: white; /* Text color */
+    justify-content: center;
+    color: white;
+    align-items: center;
 }
 
 #popup-image {
@@ -308,13 +364,28 @@ section.events {
     font-size: 1rem;
 }
 
+#popup-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Gontserrat-Semibold;
+    cursor: pointer;
+}
 
 
 
 
 
+/******************
 
-/* section formatting tags */
+Default section template
+
+******************/
 
 section.textsection {
     padding:80px;
@@ -339,8 +410,20 @@ section b {
     font-family: Gontserrat-SemiBold, Helvetica, Arial, sans-serif;
 }
 
+.videos {
+    display: block;
+    margin:0 auto;
+    text-align:center;
+}
 
-/* footer */
+
+
+/******************
+
+Footer
+
+******************/
+
 footer {
     background-color: black;
     margin: 0;
