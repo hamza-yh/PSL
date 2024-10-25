@@ -299,6 +299,11 @@ section.events {
     text-align: center;
     flex: 1; 
     filter: drop-shadow(3px 3px 3px #000000);
+    cursor: pointer;
+}
+
+.event-figs figure img:hover{
+    outline:5px solid #F1CF11;
 }
 
 .event-figs img {
@@ -394,6 +399,93 @@ Event popup
 
 
 
+/******************
+
+Event Info Page
+
+******************/
+
+.event-info{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 5% 10px 5%;
+}
+
+/* specific location backgrounds*/
+#san-diego {background-image:url("assets/images/ucsd-event.png");}
+#michigan {background-image:url("assets/images/michigan-event.png");}
+
+.event-info h2{
+    text-align: center;
+    line-height: 200%;
+    padding-top: 60px;
+    font-size: 1.5rem;
+    color: #bbbbbb;
+    filter: drop-shadow(0px 0px 4px black);
+}
+
+.event-info .event-details #event-reg-list {
+    list-style-type: none;
+}
+
+.event-info .event-details {
+    padding-top: 1%;
+    text-align: left;
+}
+
+
+#info {
+    flex: 1;
+}
+
+/* entire section for both schedule and broadcast*/
+.schedule {
+    padding: 2% 20% 5% 20%;
+}
+
+.schedule .title {
+    padding: 2%;
+}
+
+/* css of the schedule table specifically */
+#schedule-table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color: #ffffff
+}
+
+#schedule-table th, #schedule-table td{
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+#schedule-table th {
+    background-color: red;
+    color: black;
+    font-weight: bold;
+}
+
+#schedule-table tr:nth-child(even) {
+    background-color: #303030;
+}
+
+#schedule-table tr:hover {
+    background-color: #a00000;
+    color: #F1CF11;
+}
+
+/* left section just for the broadcast info */
+#broadcast-info {
+}
+
+#psl-logo{
+    max-width: 25%;
+}
+
 
 /******************
 
@@ -416,11 +508,16 @@ section.textsection h2{
 }
 
 section.lightsection {
-    background-color: #191919;
+    background-color: #2c2c2c;
 }
 
+/* bold and also changes font color */
 b {
     color: #ffffff;
+    font-family: Gontserrat-SemiBold, Helvetica, Arial, sans-serif;
+}
+
+strong {
     font-family: Gontserrat-SemiBold, Helvetica, Arial, sans-serif;
 }
 
@@ -428,50 +525,6 @@ b {
     display: block;
     margin:0 auto;
     text-align:center;
-}
-
-
-
-
-/******************
-
-Event Info Page
-
-******************/
-
-.event-info{
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    flex-wrap: wrap;
-    background-image: url("assets/images/ucsd-event.png");
-    padding: 5%;
-}
-
-.event-info h2{
-    text-align: center;
-    line-height: 200%;
-    padding-top: 60px;
-    font-size: 1.5rem;
-    color: #bbbbbb;
-    filter: drop-shadow(0px 0px 4px black);
-}
-
-.event-info .event-details #event-reg-list {
-    list-style-type: none;
-}
-
-.event-info .event-details {
-    padding-top: 1%;
-    text-align: left;
-}
-
-#info {
-    flex: 1;
-}
-
-#psl-logo{
-    max-width: 30%;
 }
 
 

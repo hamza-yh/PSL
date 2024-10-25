@@ -14,7 +14,7 @@ const bannerTitle = document.getElementById('banner-title')
 const bannerTagline = document.getElementById('banner-tagline')
 
 const bannerUrls = [
-    ['assets/images/banner1.png','Premier Speedcubers League',"The Home of Professional Speedcubing\n\nFeaturing:\n• Head to head competition\n• Open Qualifiers\n• Competitive Rating Systems"],
+    ['assets/images/banner1.png','Premier Speedcubing League',"The Home of Professional Speedcubing\n\nFeaturing:\n• Head to head competition\n• Open Qualifiers\n• Competitive Rating Systems"],
     ['assets/images/banner2.png','Our Next Event','San Diego Open PSL Qualifiers\n\nMarch 22nd, 2025\n\n$1000 in Cash Prizes!'],
     ['assets/images/banner3.png','What Makes Us Special?','Compete in our open qualifiers to not only achieve\n WCA-recognized results,\
         but also compete for a\n chance to qualify for the PSL Invitationals: \nour 8-person, double elimination tournaments!']
@@ -91,7 +91,7 @@ const eventData = [
         title: 'PSL Qualifiers San Diego',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Nullam vulputate sit amet sapien et eleifend. Nullam pulvinar ut orci quis venenatis. Morbi a diam quis dolor varius ultrices. Etiam id congue quam. Proin at urna mi. Vestibulum posuere sapien vitae ex finibus venenatis.',
         backgroundImage: 'url(images/background1.jpg)',
-        link: 'https://google.com'
+        link: 'pages/pslsd.html'
     },
     {
         imageSrc: 'assets/images/coming_soon.png',
