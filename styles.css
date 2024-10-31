@@ -542,3 +542,40 @@ footer {
 
 }
 
+
+
+
+/******************
+
+Responsive design for Mobile
+
+*******************/
+
+/* breakpoint to make psl info look goofy */
+@media screen and (max-width: 1500px) {
+    .psl-info {
+        display: inline-block;
+    }
+
+    #trailer {
+        text-align: center;
+        margin-top: 5%;
+    }
+}
+
+/* banner breakpoint */
+@media screen and (max-width: 1350px) {
+    #banner-tagline{
+        padding-top: 50px;
+    }
+
+    section.textsection h2 {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #banner-tagline {
+        padding-top: 200px;
+    }
+}
