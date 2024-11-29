@@ -75,7 +75,7 @@ setInterval(changeBanner, bannerShiftSeconds * 1000); // Change image every 5 se
  * Handles the popup that appears when you click one of the events to get more information about it
  */
 
-const figures = document.querySelectorAll('.event-figs figure');
+const figures = document.querySelectorAll('.event-figs figure:not(.tbd-event)');
 
 // Popup elements
 const popup = document.getElementById('popup');
@@ -87,23 +87,23 @@ const closeBtn = document.getElementById('close-popup');
 // Content data for each event
 const eventData = [
     {
-        imageSrc: 'assets/images/pslsd_thumbnail.png',
-        title: 'PSL Qualifiers San Diego',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Nullam vulputate sit amet sapien et eleifend. Nullam pulvinar ut orci quis venenatis. Morbi a diam quis dolor varius ultrices. Etiam id congue quam. Proin at urna mi. Vestibulum posuere sapien vitae ex finibus venenatis.',
+        imageSrc: 'assets/images/pslsd_thumbnail.jpg',
+        title: 'PSL San Diego',
+        description: 'Our first Premier Speedcubing League event! In Sunny San Diego, 64 competitors will go head to head in a double elimination bracket to see who will be crowned the first PSL champion!',
         link: 'pages/pslsd.html'
     },
     {
-        imageSrc: 'assets/images/pslmi_thumbnail.png',
+        imageSrc: 'assets/images/pslmi_thumbnail.jpg',
         title: 'PSL Qualifiers Michigan',
         description: 'Description for PSL MI',
     },
     {
-        imageSrc: 'assets/images/tbd_thumbnail.png',
+        imageSrc: 'assets/images/tbd_thumbnail.jpg',
         title: 'Penguin League',
         description: 'Description for Penguin League',
     },
     {
-        imageSrc: 'assets/images/tbd_thumbnail.png',
+        imageSrc: 'assets/images/tbd_thumbnail.jpg',
         title: 'PSL Qualifiers Las Vegas',
         description: 'Description for PSL LV',
     }

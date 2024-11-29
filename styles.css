@@ -299,11 +299,11 @@ section.events {
     text-align: center;
     flex: 1; 
     filter: drop-shadow(3px 3px 3px #000000);
-    cursor: pointer;
 }
 
-.event-figs figure img:hover{
+.event-figs figure:not(.tbd-event) img:hover {
     outline:5px solid #2522FF;
+    cursor: pointer;
 }
 
 .event-figs img {
@@ -414,8 +414,8 @@ Event Info Page
 }
 
 /* specific location backgrounds*/
-#san-diego {background-image:url("assets/images/ucsd-event.png");}
-#michigan {background-image:url("assets/images/michigan-event.png");}
+#san-diego {background-image:url("assets/images/ucsd-event.jpg");}
+#michigan {background-image:url("assets/images/michigan-event.jpg");}
 
 .event-info h2{
     text-align: center;
