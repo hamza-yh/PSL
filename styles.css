@@ -25,6 +25,11 @@ h1, h2, h3 {
 }
 
 @font-face {
+    font-family: 'Garet';
+    src: url("assets/fonts/Garet-Book.ttf");
+}
+
+@font-face {
     font-family: 'Gontserrat-Light';
     src: url("assets/fonts/Gontserrat-Light.ttf");
 }
