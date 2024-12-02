@@ -8,22 +8,6 @@ base
     margin: 0;
 }
 
-
-body {
-    color: white;
-    background: #191919;
-    font-family: Garet, Helvetica, Arial, sans-serif;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-h1, h2, h3 {
-    padding: 0;
-    margin: 0;
-}
-
 @font-face {
     font-family: 'Garet';
     src: url("assets/fonts/Garet-Book.ttf");
@@ -43,6 +27,23 @@ h1, h2, h3 {
     font-family: 'Xolonium-Regular';
     src: url("assets/fonts/Xolonium-Regular.ttf");
 }
+
+body {
+    color: white;
+    background: #191919;
+    font-family: 'Garet', Helvetica, Arial, sans-serif;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3 {
+    padding: 0;
+    margin: 0;
+}
+
+
 
 
 
@@ -312,8 +313,9 @@ section.events {
 }
 
 .event-figs img {
-    max-width: 400px; 
-    height: auto; 
+    max-width: 400px;
+    max-height: 400px; 
+    height: auto;
 }
 
 .event-figs figure figcaption {

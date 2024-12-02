@@ -94,18 +94,23 @@ const eventData = [
     },
     {
         imageSrc: 'assets/images/pslmi_thumbnail.jpg',
-        title: 'PSL Qualifiers Michigan',
+        title: 'PSL Michigan',
         description: 'Description for PSL MI',
     },
     {
-        imageSrc: 'assets/images/tbd_thumbnail.jpg',
-        title: 'Penguin League',
-        description: 'Description for Penguin League',
+        imageSrc: 'assets/images/pslb_thumbnail.jpg',
+        title: 'PSL Berkeley',
+        description: 'Description for PSL Berkeley',
     },
     {
-        imageSrc: 'assets/images/tbd_thumbnail.jpg',
-        title: 'PSL Qualifiers Las Vegas',
-        description: 'Description for PSL LV',
+        imageSrc: 'assets/images/psllv_thumbnail.jpg',
+        title: 'PSL Las Vegas',
+        description: 'Description for PSL Las Vegas',
+    },
+    {
+        imageSrc: 'assets/images/happyft_logo.png',
+        title: 'The Speedcubing.tv Cup',
+        description: 'Description for The Speedcubing.tv Cup',
     }
 ];
 
@@ -120,10 +125,13 @@ function openPopup(index) {
 }
 
 // Event listeners for figures
-figures.forEach((figure, index) => {
-    figure.addEventListener('click', () => {
-        openPopup(index);
-    });
+figures.forEach((figure) => {
+    const img = figure.querySelector('img'); // Get the image inside the figure
+    if (img) {
+        img.addEventListener('click', () => {
+            openPopup(Array.from(figures).indexOf(figure)); // Use the figure's index
+        });
+    }
 });
 
 // Close popup
