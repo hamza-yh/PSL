@@ -296,7 +296,7 @@ section.events {
     padding-top: 60px;
     display: flex;
     justify-content: space-between; 
-    align-items: center;
+    align-items:baseline;
     flex-wrap: wrap;
 }
 
@@ -313,8 +313,8 @@ section.events {
 }
 
 .event-figs img {
-    max-width: 400px;
-    max-height: 400px; 
+    max-width: 300px;
+    max-height: 300px; 
     height: auto;
 }
 
@@ -619,6 +619,13 @@ Responsive design for Mobile
 
 *******************/
 
+@media screen and (max-width: 1800px) {
+    .event-figs img{
+        max-width: 400px;
+        max-height: 400px;
+    }
+}
+
 /* breakpoint to make psl info look goofy */
 @media screen and (max-width: 1500px) {
     .psl-info {
@@ -644,7 +651,8 @@ Responsive design for Mobile
 
 @media screen and (max-width: 1050px) {
     .event-figs img {
-        max-width: 600px; 
+        max-width: 600px;
+        max-height: 600px;
     }
 }
 
@@ -656,6 +664,7 @@ Responsive design for Mobile
 
 @media screen and (max-width: 800px) {
     .event-figs img {
-        max-width: 400px; 
+        max-width: 400px;
+        max-height: 400px;
     }
 }
