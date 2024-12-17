@@ -28,9 +28,15 @@ base
     src: url("assets/fonts/Xolonium-Regular.ttf");
 }
 
+@font-face {
+    font-family: 'title-font';
+    src: url("assets/fonts/Helmet-Regular.ttf");
+}
+
 body {
     color: white;
-    background: #191919;
+    background-image: url("assets/images/void_background.jpg");
+    background-attachment: fixed;
     font-family: 'Garet', Helvetica, Arial, sans-serif;
     padding: 0;
     min-height: 100vh;
@@ -43,34 +49,33 @@ h1, h2, h3 {
     margin: 0;
 }
 
-
+a {
+    color: #77aaff;
+}
 
 
 
 .title {
-    font-family: 'Xolonium-Regular';
-    /*color: #89fdda;*/
-    font-size: 4rem;
+    font-family: 'title-font';
+    font-size: 6rem;
     text-align: center;
     padding: 0;
-    /*
-    background-image: linear-gradient(#ffffff, #89fdda);
-    color: transparent;
-    */
     background-clip: text;
     -webkit-background-clip: text;
-    filter: drop-shadow(3px 3px 2px #2522FF);
-
+    /*filter: drop-shadow(3px 3px 2px #2522FF);
+    */
+    text-transform: uppercase;
 }
 
 .mini-title {
-    font-family: 'Xolonium-Regular';
-    font-size: 2.5rem;
+    font-family: 'title-font';
+    font-size: 3rem;
     text-align: center;
     padding: 0;
     background-clip: text;
     -webkit-background-clip: text;
-    filter: drop-shadow(3px 3px 2px #2522FF);
+    /*filter: drop-shadow(3px 3px 2px #2522FF);*/
+    text-transform: uppercase;
 
 }
 
@@ -174,7 +179,6 @@ header.banner {
     height: 800px;
     padding: 0;
     overflow: hidden;
-    background-color: #000000;
 }
 
 .banner-slider {
@@ -191,6 +195,10 @@ header.banner {
     height: 100%;
     background-size: cover;
     background-position: center;
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
     z-index: 2;
 }
 
@@ -202,6 +210,10 @@ header.banner {
     background-position: center;
     opacity: 0;
     transition: opacity 1s ease-in-out;
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
 }
 
 .banner-image.active {
@@ -210,18 +222,18 @@ header.banner {
 
 header.banner h1 {
     
-    font-family: 'Xolonium-Regular';
+    font-family: 'title-font';
     position: absolute;
     top: 20%;
     left: 5%;
     text-align: left;
     z-index: 2;
-    font-size: 5rem;
-    /*background-image: linear-gradient(#ffffff, #89fdda);
-    color: transparent;*/
+    font-size: 6rem;
+
     background-clip: text;
     -webkit-background-clip: text;
-    filter: drop-shadow(3px 3px 2px #2522FF);
+
+    text-transform: uppercase;
 }
 
 header.banner h2 {
@@ -230,7 +242,6 @@ header.banner h2 {
     left: 5%;
     text-align: left;
     z-index: 2;
-    font-style: italic;
     color: #e0e0e0;
     filter: drop-shadow(0px 0px 4px #000000)
 }
@@ -288,7 +299,7 @@ Upcoming Events Figures
 ******************/
 section.events { 
     padding: 80px;
-    background: #2c2c2c;
+    background: black;
 }
 
 
@@ -480,6 +491,10 @@ Event Info Page
     background-color: #303030;
 }
 
+#schedule-table tr:nth-child(odd) {
+    background-color: #191919;
+}
+
 #schedule-table tr:hover {
     background-color: #a00000;
     color: #F1CF11;
@@ -525,7 +540,8 @@ Default section template
 
 .partners figure figcaption {
     font-size: 2rem;
-    font-family: 'Xolonium-Regular';
+    font-family: 'title-font';
+    text-transform: uppercase;
 }
 
 
@@ -550,7 +566,7 @@ section.textsection h2{
 }
 
 section.lightsection {
-    background-color: #2c2c2c;
+    background-color: black;
 }
 
 /* bold and also changes font color */
