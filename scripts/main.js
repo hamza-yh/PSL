@@ -95,6 +95,7 @@ const eventData = [
     {
         imageSrc: 'assets/images/pslmi_thumbnail.jpg',
         title: 'PSL Michigan',
+        link: 'pages/pslmi.html',
         description: 'Description for PSL MI',
     },
     {
@@ -110,6 +111,7 @@ const eventData = [
     {
         imageSrc: 'assets/images/happyft_logo.png',
         title: 'The Speedcubing.tv Cup',
+        link: 'pages/speedcubingtvcup.html',
         description: 'Description for The Speedcubing.tv Cup',
     }
 ];

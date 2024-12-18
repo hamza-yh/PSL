@@ -37,6 +37,8 @@ body {
     color: white;
     background-image: url("assets/images/void_background.jpg");
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Garet', Helvetica, Arial, sans-serif;
     padding: 0;
     min-height: 100vh;
@@ -53,8 +55,6 @@ a {
     color: #77aaff;
 }
 
-
-
 .title {
     font-family: 'title-font';
     font-size: 6rem;
@@ -62,8 +62,6 @@ a {
     padding: 0;
     background-clip: text;
     -webkit-background-clip: text;
-    /*filter: drop-shadow(3px 3px 2px #2522FF);
-    */
     text-transform: uppercase;
 }
 
@@ -74,10 +72,45 @@ a {
     padding: 0;
     background-clip: text;
     -webkit-background-clip: text;
-    /*filter: drop-shadow(3px 3px 2px #2522FF);*/
     text-transform: uppercase;
-
 }
+
+.fade-up {
+    animation: fadeUp ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeUp{
+    0% {
+        opacity: 0;
+        transform: translateY(30px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.fade-down {
+    animation: fadeDown ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeDown{
+    0% {
+        opacity: 0;
+        transform: translateY(-30px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
 
 
 
@@ -512,7 +545,7 @@ Event Info Page
 
 /******************
 
-Default section template
+Sponsors Page
 
 ******************/
 
@@ -524,6 +557,7 @@ Default section template
     align-items: center;
     flex-wrap: wrap;
 }
+
 
 .partners figure {
     margin: 10px;
@@ -543,6 +577,7 @@ Default section template
     font-family: 'title-font';
     text-transform: uppercase;
 }
+
 
 
 /******************
