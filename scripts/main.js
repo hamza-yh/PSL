@@ -15,7 +15,7 @@ const bannerTagline = document.getElementById('banner-tagline')
 
 const bannerUrls = [
     ['assets/images/banner1.jpg','Premier Speedcubing League',"The Home of Professional Speedcubing\n\nFeaturing:\n- Head to head competition\n- Open Qualifiers\n- Competitive Rating Systems"],
-    ['assets/images/banner2.jpg','Our Next Event','San Diego Open PSL Qualifiers\n\nMarch 22nd, 2025\n\n$1000 in Cash Prizes!'],
+    ['assets/images/banner2.jpg','Our Next Events','PSL Berkeley Open\nMarch 16th, 2025\n\nPSL San Diego Open\nMarch 22nd, 2025'],
     ['assets/images/banner3.jpg','What Makes Us Special?','Compete in our open qualifiers to not only achieve\n WCA-recognized results,\
         but also compete for a\n chance to qualify for the PSL Invitationals: \nour 8-person, double elimination tournaments!']
 ];
@@ -87,32 +87,24 @@ const closeBtn = document.getElementById('close-popup');
 // Content data for each event
 const eventData = [
     {
-        imageSrc: 'assets/images/pslsd_thumbnail.jpg',
-        title: 'PSL San Diego',
-        description: 'Our first Premier Speedcubing League event! In Sunny San Diego, 64 competitors will go head to head in a double elimination bracket to see who will be crowned the first PSL champion!',
-        link: 'pages/pslsd.html'
-    },
-    {
-        imageSrc: 'assets/images/pslmi_thumbnail.jpg',
-        title: 'PSL Michigan',
-        link: 'pages/pslmi.html',
-        description: 'Description for PSL MI',
-    },
-    {
         imageSrc: 'assets/images/pslb_thumbnail.jpg',
         title: 'PSL Berkeley',
-        description: 'Description for PSL Berkeley',
+        description: 'The first ever Premier Speedcubing League event! Located in what many consider to be the birthplace of ' +
+        'modern speedcubing, 64 competitors will battle to find out who will be the inaugural winner of the PSL!',
+        link: 'pages/pslberkeley.html'
     },
     {
-        imageSrc: 'assets/images/psllv_thumbnail.jpg',
-        title: 'PSL Las Vegas',
-        description: 'Description for PSL Las Vegas',
+        imageSrc: 'assets/images/pslsd_thumbnail.jpg',
+        title: 'PSL San Diego',
+        description: 'Our second Premier Speedcubing League event! In Sunny San Diego, 64 competitors will go head'+
+        ' to head in a double elimination bracket to see who will be crowned the first PSL champion!',
+        link: 'pages/pslsd.html'
     },
     {
         imageSrc: 'assets/images/happyft_logo.png',
         title: 'The Speedcubing.tv Cup',
         link: 'pages/speedcubingtvcup.html',
-        description: 'Description for The Speedcubing.tv Cup',
+        description: 'An online tournament run by our partner, Speedcubing.tv! The winner of this tournament will receive a free ticket to entry for a future PSL Event!',
     }
 ];
 

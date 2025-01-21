@@ -467,6 +467,7 @@ Event Info Page
 /* specific location backgrounds*/
 #san-diego {background-image:url("assets/images/ucsd-event.jpg");}
 #michigan {background-image:url("assets/images/michigan-event.jpg");}
+#berkeley {background-image:url("assets/images/berkeley-event.jpg");}
 
 .event-info h2{
     text-align: center;
@@ -570,6 +571,11 @@ Sponsors Page
     max-width: 400px; 
     max-height: 400px;
     height: auto; 
+    border-radius: 25px;
+}
+
+.partners img:hover {
+    outline:5px solid #0080ff;
 }
 
 .partners figure figcaption {
