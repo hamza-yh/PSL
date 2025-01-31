@@ -96,7 +96,7 @@ const eventData = [
     {
         imageSrc: 'assets/images/pslsd_thumbnail.jpg',
         title: 'PSL San Diego',
-        description: 'Our second Premier Speedcubing League event! In Sunny San Diego, 64 competitors will go head'+
+        description: 'Our second Premier Speedcubing League event! In Sunny San Diego, 32 competitors will go head'+
         ' to head in a double elimination bracket to see who will be crowned the first PSL champion!',
         link: 'pages/pslsd.html'
     },
