@@ -101,6 +101,11 @@ const eventData = [
         link: 'pages/pslsd.html'
     },
     {
+        imageSrc: 'assets/images/pslmi_thumbnail.jpg',
+        title: 'PSL Michigan',
+        description: 'Save the date! Our third PSL Event will be in Port Huron, Michigan on April 20th, 2025! More information coming soon!',
+    },
+    {
         imageSrc: 'assets/images/happyft_logo.png',
         title: 'The Speedcubing.tv Cup',
         link: 'pages/speedcubingtvcup.html',
@@ -114,7 +119,17 @@ function openPopup(index) {
     popupImage.src = event.imageSrc;
     popupTitle.textContent = event.title;
     popupDescription.textContent = event.description;
-    document.getElementById('popup-link').href = event.link;
+
+    const popupLink = document.getElementById('popup-link');
+    const popupButton = document.getElementById('popup-button');
+
+    if (event.link) {
+        popupLink.href = event.link;
+        popupLink.style.display = 'inline-block'; // Show button if link exists
+    } else {
+        popupLink.style.display = 'none'; // Hide button if no link
+    }
+
     popup.style.display = 'block';
 }
 
