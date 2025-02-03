@@ -135,11 +135,12 @@ nav .logo {
 }
 
 nav {
-    color: red;
+    color: white;
     background:  #000000;
     padding: 0;
     margin: 0;
-    text-align: left ;
+    text-align: left;
+    font-weight: bolder;
 }
 
 nav a:link,
@@ -169,7 +170,7 @@ nav ul li a {
 
 
 nav ul li:not(.logo) a:hover {
-    background: red;
+    background: white;
     font-weight: bold;
     color: #191919;
     border-bottom: none;
@@ -520,8 +521,8 @@ Event Info Page
 }
 
 #schedule-table th {
-    background-color: red;
-    color: black;
+    background-color: #440000;
+    color: white;
     font-weight: bold;
 }
 
@@ -647,6 +648,7 @@ footer {
 
 footer ul {
     display: flex;
+    align-items: center;
     list-style-type: none;
     padding: 0;
 }
@@ -669,7 +671,26 @@ footer ul li a:hover {
     text-underline-offset: 20%;
 }
 
+footer .socials {
+    display: inline-block;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -99999px; /* hide the footer text */
+    overflow: hidden;
+}
 
+footer .socials:hover {
+    filter: invert(30%) sepia(90%) saturate(5000%) hue-rotate(190deg) brightness(90%) contrast(100%);
+}
+
+#insta { background-image: url("assets/images/instagram_logo.png"); }
+#youtube { background-image: url("assets/images/youtube_logo.png"); }
+#tiktok { background-image: url("assets/images/tiktok_logo.png"); }
+#twitter { background-image: url("assets/images/x_logo.png"); }
 
 
 

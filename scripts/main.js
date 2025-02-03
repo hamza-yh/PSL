@@ -103,7 +103,7 @@ const eventData = [
     {
         imageSrc: 'assets/images/pslmi_thumbnail.jpg',
         title: 'PSL Michigan',
-        description: 'Save the date! Our third PSL Event will be in Port Huron, Michigan on April 20th, 2025! More information coming soon!',
+        description: 'Save the date! Our third PSL Event will be in Port Huron! Date TBD, more information coming soon!',
     },
     {
         imageSrc: 'assets/images/happyft_logo.png',
