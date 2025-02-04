@@ -134,6 +134,7 @@ nav .logo {
     height: 64px;
 }
 
+
 nav {
     color: white;
     background:  #000000;
@@ -174,6 +175,10 @@ nav ul li:not(.logo) a:hover {
     font-weight: bold;
     color: #191919;
     border-bottom: none;
+}
+
+.menu-btn {
+    display: none;
 }
 
 .dropdown {
@@ -539,10 +544,6 @@ Event Info Page
     color: #F1CF11;
 }
 
-/* left section just for the broadcast info */
-#broadcast-info {
-}
-
 #psl-logo{
     max-width: 25%;
 }
@@ -609,6 +610,15 @@ section.textsection h2{
     padding-top: 60px;
     font-size: 1.5rem;
     color: #bbbbbb
+}
+
+section.textsection.leftsection h2 {
+    text-align: left;
+}
+
+.mini-title.leftsection {
+    text-align: left;
+    padding-left: 100px;
 }
 
 section.lightsection {
@@ -691,6 +701,7 @@ footer .socials:hover {
 #youtube { background-image: url("assets/images/youtube_logo.png"); }
 #tiktok { background-image: url("assets/images/tiktok_logo.png"); }
 #twitter { background-image: url("assets/images/x_logo.png"); }
+#linkedin { background-image: url("assets/images/linkedin_logo.png"); }
 
 
 
@@ -730,6 +741,9 @@ Responsive design for Mobile
     section.textsection h2 {
         padding: 10px;
     }
+    .mini-title.leftsection {
+        padding-left: 10px;
+    }
 }
 
 @media screen and (max-width: 1050px) {
@@ -740,9 +754,54 @@ Responsive design for Mobile
     #banner-tagline {
         padding-top: 200px;
     }
+
+    footer ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer ul li {
+        padding: 5px;
+    }
 }
 
+@media screen and (max-width: 900px) {
+    .main-nav {
+        display: none;
+        justify-content: center;    /* Center items horizontally */
+        align-items: center;        /* Center items vertically (optional, for vertical centering) */
+    }
 
+    .menu-btn {
+        display: flex;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 200;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+        margin: 0;
+    }
+
+    nav ul li {
+        text-align: center;
+        align-items: center;
+    }
+
+    nav ul li a {
+        margin: 0;
+        padding: 10px;
+        align-items: center;
+    }
+
+}
 
 @media screen and (max-width: 800px) {
     .event-figs img {
@@ -756,14 +815,7 @@ Responsive design for Mobile
         margin-bottom: 10px;
     }
 
-    footer ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    footer ul li {
-        padding: 5px;
-    }
 }
 
 @media screen and (max-width: 600px) {
