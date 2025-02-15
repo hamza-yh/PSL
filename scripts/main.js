@@ -14,10 +14,12 @@ const bannerTitle = document.getElementById('banner-title')
 const bannerTagline = document.getElementById('banner-tagline')
 
 const bannerUrls = [
-    ['assets/images/banner1.jpg','Premier Speedcubing League',"The Home of Professional Speedcubing\n\nFeaturing:\n- Head to head competition\n- Open Qualifiers\n- Competitive Rating Systems"],
+    ['assets/images/banner1.jpg','Premier Speedcubing League',"The Home of Professional Speedcubing\n\nFeaturing:\n- Head to head competition\
+        \n- Open Qualifiers\n- Competitive Rating Systems"],
     ['assets/images/banner2.jpg','Our Next Events','PSL Berkeley Open\nMarch 16th, 2025\n\nPSL San Diego Open\nMarch 22nd, 2025'],
     ['assets/images/banner3.jpg','What Makes Us Special?','Compete in our open qualifiers to experience a convention-like\n speedcubing event,\
-        as well as a brand new competitive format!']
+        as well as a brand new competitive format!'],
+    ['assets/images/banner4.jpg','PSL Theme Song:','Skate by DG The aretist']
 ];
 const bannerShiftSeconds = 6;
 
