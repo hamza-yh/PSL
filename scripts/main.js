@@ -66,8 +66,11 @@ function changeBanner() {
 
 bannerTitle.classList.add('show');
 bannerTagline.classList.add('show');
-
-setInterval(changeBanner, bannerShiftSeconds * 1000); // Change image every 5 seconds
+/** 
+ * Uncomment this line to re-enable the shifting banner
+ * setInterval(changeBanner, bannerShiftSeconds * 1000);
+ */
+// Change image every 5 seconds
 
 
 
