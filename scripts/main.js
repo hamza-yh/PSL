@@ -24,6 +24,7 @@ const bannerUrls = [
 const bannerShiftSeconds = 6;
 
 // create and append the image elements dynamically
+/*
 bannerUrls.forEach((banner, index) => {
     const bannerImage = document.createElement('div');
     bannerImage.className = 'banner-image';
@@ -36,9 +37,11 @@ bannerUrls.forEach((banner, index) => {
     slider.appendChild(bannerImage);
 });
 
+
 const images = document.querySelectorAll('.banner-image');
 const totalImages = images.length;
 let currentIndex = 0;
+*/
 
 function changeBanner() {
     //new
@@ -64,8 +67,11 @@ function changeBanner() {
 
 }
 
+/*
 bannerTitle.classList.add('show');
 bannerTagline.classList.add('show');
+*/
+
 /** 
  * Uncomment this line to re-enable the shifting banner
  * setInterval(changeBanner, bannerShiftSeconds * 1000);
