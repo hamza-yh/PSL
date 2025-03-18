@@ -248,7 +248,7 @@ header and banner
     mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
-    background-image: url("assets/images/banner5.jpg");
+    background-image: url("assets/images/banner1.jpg");
     z-index: -100;
     opacity: .6
 }
@@ -271,28 +271,24 @@ header and banner
 #landing-buttons{
     display: flex;
     padding-top: 7.5%;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
-    gap: 40px;
+    justify-content: center;
     margin-left: 25%;
     margin-right: 25%;
 }
 
 .banner .button-link{
-    padding: 10px 20px;
+    padding: 20px 30px;
     border-radius: 10px;
     background-color: #0018a3ce;
     color: #ffffff;
     border: none;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 4rem;
     font-family: 'title-font';
     cursor: pointer;
     text-decoration: none;
 
-    flex: 1 1 calc(50% - 40px); 
-    max-width: calc(50% - 40px); 
+    max-width: 50%; 
     box-sizing: border-box; 
 }
 
@@ -723,6 +719,10 @@ Responsive design for Mobile
     }
     .mini-title.leftsection {
         padding-left: 10px;
+    }
+
+    .banner .button-link{
+        font-size: 2rem;
     }
 }
 

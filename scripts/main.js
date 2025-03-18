@@ -98,13 +98,6 @@ const closeBtn = document.getElementById('close-popup');
 // Content data for each event
 const eventData = [
     {
-        imageSrc: 'assets/images/pslb_thumbnail.jpg',
-        title: 'PSL Berkeley',
-        description: 'The first ever Premier Speedcubing League event! Located in what many consider to be the birthplace of ' +
-        'modern speedcubing, 64 competitors will battle to find out who will be the inaugural winner of the PSL!',
-        link: 'pages/pslberkeley.html'
-    },
-    {
         imageSrc: 'assets/images/pslsd_thumbnail.jpg',
         title: 'PSL San Diego',
         description: 'Our second Premier Speedcubing League event! In Sunny San Diego, 32 competitors will go head'+
