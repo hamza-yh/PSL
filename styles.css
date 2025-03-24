@@ -46,6 +46,10 @@ body {
     flex-direction: column;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .footer-page {
     background-image: url("assets/images/gray_void_background.jpg");
 }
