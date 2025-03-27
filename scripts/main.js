@@ -98,11 +98,6 @@ const closeBtn = document.getElementById('close-popup');
 // Content data for each event
 const eventData = [
     {
-        imageSrc: 'assets/images/pslmi_thumbnail.jpg',
-        title: 'PSL Michigan',
-        description: 'We will be running a future PSL Event in Port Huron! Date TBD, more information coming soon!',
-    },
-    {
         imageSrc: 'assets/images/happyft_logo.png',
         title: 'The Speedcubing.tv Cup',
         link: 'pages/speedcubingtvcup.html',
