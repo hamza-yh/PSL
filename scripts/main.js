@@ -98,6 +98,12 @@ const closeBtn = document.getElementById('close-popup');
 // Content data for each event
 const eventData = [
     {
+        imageSrc: 'assets/images/pslv_thumbnail.jpg',
+        title: 'PSL Las Vegas',
+        //link: 'pages/pslvegas.html',
+        description: 'Our third Premier Speedcubing League event will be in Las Vegas, Nevada! More details coming soon!'
+    },
+    {
         imageSrc: 'assets/images/happyft_logo.png',
         title: 'The Speedcubing.tv Cup',
         link: 'pages/speedcubingtvcup.html',
