@@ -100,8 +100,8 @@ const eventData = [
     {
         imageSrc: 'assets/images/pslv_thumbnail.jpg',
         title: 'PSL Las Vegas',
-        //link: 'pages/pslvegas.html',
-        description: 'Our third Premier Speedcubing League event will be in Las Vegas, Nevada! More details coming soon!'
+        link: 'https://start.gg/pslv',
+        description: 'Join us on September 1st, 2025 for our third PSL event, located at SpeedCubeShop headquarters in Las Vegas, Nevada!'
     },
     {
         imageSrc: 'assets/images/happyft_logo.png',
