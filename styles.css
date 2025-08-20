@@ -6,6 +6,7 @@ base
 
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -64,7 +65,7 @@ a {
 }
 
 .title {
-    font-family: 'title-font';
+    font-family: 'title-font', 'Gontserrat-SemiBold', Helvetica, Arial, sans-serif;
     font-size: 6rem;
     text-align: center;
     padding: 0;
@@ -74,7 +75,7 @@ a {
 }
 
 .mini-title {
-    font-family: 'title-font';
+    font-family: 'title-font', Helvetica, Arial, sans-serif;
     font-size: 3rem;
     text-align: center;
     padding: 0;
@@ -824,4 +825,24 @@ Responsive design for Mobile
     .title {
         font-size: 4rem;
     }
+}
+
+
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+
+.hover.glass:hover {
+    background: rgba(255,255,255,0.2);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    transition: background 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.dark {
+    color: rgb(127, 127, 127);
 }
