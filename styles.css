@@ -45,6 +45,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+
+    margin-top: 75px; /* to account for the fixed navbar */
 }
 
 html {
@@ -129,24 +131,29 @@ navigation bar
 
 ******************/
 
-nav .logo {
-    background-image: url("assets/images/logo.png");
-    background-size: 64px;
-    background-repeat: no-repeat;
-    text-indent: -9999999px;
-    display:inline-block;
-    width: 64px;
-    height: 64px;
+nav .logo a {
+    padding: 10px;
 }
-
 
 nav {
     color: white;
     background:  #000000;
-    padding: 0;
+    padding-inline: 10px;
     margin: 0;
     text-align: left;
     font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+
+    /* nav bar sticks to top of page */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    /* shadow below navbar */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
 nav a:link,
@@ -157,8 +164,10 @@ nav a:visited {
 
 nav ul {
     display: flex;
+    align-items: center;
     list-style-type: none;
     padding: 0;
+    height: 100%;
 }
 
 nav ul li {
@@ -167,11 +176,14 @@ nav ul li {
     padding: 0;
 }
 
-nav ul li a {
+nav a {
     display: block;
     padding: 20px;
     margin: 0;
     line-height: 24px;
+    height: 75px;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -761,10 +773,15 @@ Responsive design for Mobile
 }
 
 @media screen and (max-width: 900px) {
+    body {
+        margin-top: 0; /* remove margin for fixed navbar */;
+    }
     .main-nav {
         display: none;
+        flex-direction: column;
         justify-content: center;    /* Center items horizontally */
         align-items: center;        /* Center items vertically (optional, for vertical centering) */
+        padding-top: 30px ;
     }
 
     .menu-btn {
@@ -775,13 +792,13 @@ Responsive design for Mobile
         position: absolute;
         top: 20px;
         left: 20px;
-        z-index: 200;
+        z-index: 2000;
     }
 
     nav ul {
         flex-direction: column;
         align-items: center;
-        padding-top: 80px;
+        padding-top: 0px;
         margin: 0;
     }
 
@@ -794,6 +811,7 @@ Responsive design for Mobile
         margin: 0;
         padding: 10px;
         align-items: center;
+        height: 50px;
     }
     
     .landing {
