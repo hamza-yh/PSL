@@ -265,6 +265,8 @@ header and banner
     mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
+    /* ensure tymon stays in frame */
+    background-position: left;
     background-image: url("assets/images/banner1.jpg");
     z-index: -100;
     opacity: .6
